@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto - Constructora Aurum</title>
+<meta name="description" content="Contáctanos para tu próximo proyecto de construcción en Curicó, Chile.">
+<link rel="icon" href="img/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/main.js"></script>
+</head>
+<body>
+<header class="navbar">
+  <div class="container">
+    <a class="logo" href="index.html">Constructora Aurum</a>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <button id="nav-toggle" aria-label="Menú"><i class="fa fa-bars"></i></button>
+    <button id="theme-toggle" aria-label="Cambiar tema"><i class="fa fa-moon"></i></button>
+  </div>
+</header>
+<main>
+<section class="contact fade-in">
+  <div class="container">
+    <h1>Contacto</h1>
+    <form id="contact-form" autocomplete="off" novalidate>
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+      </div>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.9973785084575!2d-71.23934652475391!3d-34.97580757324332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9664a9c9cd7e29ef%3A0xaab81e9867250b06!2sCuric%C3%B3%2C%20Maule%2C%20Chile!5e0!3m2!1ses!2scl!4v1700000000000!5m2!1ses!2scl" width="100%" height="250" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p>WhatsApp: <a href="https://wa.me/56933855044" target="_blank" rel="noopener">+56933855044</a></p>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Constructora Aurum. Curicó, Chile.</p>
+    <p><i class="fa-brands fa-whatsapp"></i> +56933855044</p>
+  </div>
+</footer>
+<a href="https://wa.me/56933855044" class="whatsapp-btn" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</body>
+</html>
