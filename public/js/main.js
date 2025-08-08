@@ -42,6 +42,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
+  const heroSlides = document.querySelectorAll('.hero-slide');
+  if (heroSlides.length) {
+    let current = 0;
+    setInterval(() => {
+      heroSlides[current].classList.remove('active');
+      current = (current + 1) % heroSlides.length;
+      heroSlides[current].classList.add('active');
+    }, 5000);
+  }
+
   if (typeof Swiper !== 'undefined') {
     new Swiper('.swiper', {
       loop: true,
