@@ -43,6 +43,17 @@ a {
   margin: 0 auto;
 }
 
+/* Glass effect for content blocks */
+section .container,
+.footer .container {
+  background: rgba(200, 200, 200, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
 /* Header */
 .header {
   position: fixed;
@@ -90,7 +101,7 @@ a {
 
 /* Hero */
 .hero {
-  background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat fixed;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -111,6 +122,12 @@ a {
 .hero-content {
   position: relative;
   z-index: 1;
+  background: rgba(200, 200, 200, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 2rem;
 }
 .hero h1 {
   font-family: var(--font-title);
@@ -134,7 +151,7 @@ a {
 /* Mission & Vision */
 .mission-vision {
   padding: 5rem 0;
-  background: var(--white);
+  background: url('https://images.unsplash.com/photo-1523287721-fca7be24329d?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat fixed;
   text-align: center;
 }
 .mv-item {
@@ -153,7 +170,7 @@ a {
 /* About */
 .about {
   padding: 5rem 0;
-  background: var(--silver);
+  background: url('https://images.unsplash.com/photo-1503389152951-9b3d09ff63c6?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat fixed;
   text-align: center;
 }
 .about h2 {
@@ -164,6 +181,7 @@ a {
 /* Services */
 .services {
   padding: 5rem 0;
+  background: url('https://images.unsplash.com/photo-1581090465040-8c8dfdf4945a?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat fixed;
 }
 .service-grid {
   display: grid;
@@ -196,7 +214,7 @@ a {
 /* Projects */
 .projects {
   padding: 5rem 0;
-  background: var(--white);
+  background: url('https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat fixed;
 }
 .filter-buttons {
   text-align: center;
@@ -249,7 +267,7 @@ a {
 /* Testimonials */
 .testimonials {
   padding: 5rem 0;
-  background: var(--silver);
+  background: url('https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat fixed;
   text-align: center;
 }
 .testimonial-item {
@@ -268,7 +286,7 @@ a {
 /* Contact */
 .contact {
   padding: 5rem 0;
-  background: var(--white);
+  background: url('https://images.unsplash.com/photo-1508385082359-f38ae991e8f5?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat fixed;
 }
 .contact-grid {
   display: grid;
@@ -308,7 +326,7 @@ a {
 
 /* Footer */
 .footer {
-  background: var(--dark-gray);
+  background: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat fixed;
   color: var(--white);
   text-align: center;
   padding: 2rem 0;
